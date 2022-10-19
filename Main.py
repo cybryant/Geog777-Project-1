@@ -120,15 +120,13 @@ def showWells():
 ##################################
 # SETUP THE TKINTER LAYOUT
 ##################################
-# DEFINE INPUT & VIEW FRAMES
+# define input and view frames
 viewFrame = tk.LabelFrame(root, bg='DarkSlateBlue', width=900, height=750, padx=5, pady=5)
 inputFrame = tk.Frame(root, bg='DarkSeaGreen')
 viewFrame.grid(column=0, row=0)
 inputFrame.grid(column=1, row=0, padx=(12,10), pady=10)
-# expand the column to fill the entire space regardless of widget size
-# inputFrame.columnconfigure(1, minsize=400)
 
-# SET INITIAL STATE OF VIEWFRAME WITH POINTS & CENSUS TRACTS DISPLAYED
+# set inital state of view frame with points and census tracts displayed
 wellsImgPath = "Project1/Project1Files/points.jpg"
 wellsImg = ImageTk.PhotoImage(Image.open(wellsImgPath))
 resultImgFrame = tk.Label(viewFrame, image=wellsImg, width=600, height=700)
