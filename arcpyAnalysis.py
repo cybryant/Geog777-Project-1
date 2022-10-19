@@ -93,7 +93,9 @@ def zonalStats(tracts, idwResults, k):
 
     print('The zonalStats function ran correctly for a k-value of: ' + str(k) +'.')
 
-    """ join statsTable to tracts so the Mean Nitrate field & calculate new fields for Mean & FID so Mean can easily be used in the OLS regression as a dependent variable; FIDint is copied from FID but as an integer as that's the imput type required by OLS"""
+    """ join statsTable to tracts so the Mean Nitrate field & calculate new fields for Mean & 
+    FID so Mean can easily be used in the OLS regression as a dependent variable; 
+    FIDint is copied from FID but as an integer as that's the imput type required by OLS"""
 
     # SET VARIABLES FOR PROCESS PARAMETERS    
     inFC = tracts
